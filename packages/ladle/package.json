@@ -79,7 +79,8 @@
     "jest": "^27.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rollup": "^2.68.0"
+    "rollup": "^2.68.0",
+    "vite-tsconfig-paths": "^3.4.1"
   },
   "jest": {
     "transform": {
