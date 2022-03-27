@@ -2,6 +2,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import path from "path";
 import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 import ladlePlugin from "./vite-plugin/vite-plugin.js";
 import { flowPlugin, esbuildFlowPlugin } from "./strip-flow.js";
 
@@ -65,6 +66,7 @@ const getBaseViteConfig = async (ladleConfig, configFolder, viteConfig) => {
           compact: true,
         },
       }),
+      tsconfigPaths(),
       ...(viteConfig.plugins ? viteConfig.plugins : []),
     ],
     esbuild: {
